@@ -2,13 +2,15 @@
 
 # LaravelPaypal
 
-A Laravel demo project integrating PayPal payments and category management.
+A Laravel demo project integrating PayPal payments, category management, and product management.
 
 ## Features
 
 - Category CRUD (Create, Read, Update, Delete)
 - Category image upload
 - Category activation toggle
+- Product CRUD (Create, Read, Update, Delete)
+- Product stock and price management
 - PayPal payment integration
 - Responsive UI with Tailwind CSS
 
@@ -61,8 +63,11 @@ A Laravel demo project integrating PayPal payments and category management.
 - Add, edit, or delete categories
 - Upload category images
 - Toggle category activation
+- Manage products from `/products`
+- Add, edit, or delete products
+- Set product price and stock
 - Test PayPal payments (see documentation for setup)
 
 ## License
 
-This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT)
