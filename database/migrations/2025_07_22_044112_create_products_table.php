@@ -18,7 +18,6 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->float('price', 8, 2);
             $table->integer('stock')->default(0);
-            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
