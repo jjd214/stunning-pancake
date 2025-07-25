@@ -14,6 +14,11 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::resource('category', CategoryController::class);  
     Route::resource('product', ProductController::class);
+
+    Route::post('create-payment', [\App\Http\Controllers\PaypalController::class, 'createPayment'])->name('paypal.create');
+
+    Route::get('success', [\App\Http\Controllers\PaypalController::class, 'success'])->name('paypal.success');
+    Route::get('error', [\App\Http\Controllers\PaypalController::class, 'error'])->name('paypal.error');
     
 });
 
